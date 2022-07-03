@@ -13,20 +13,17 @@ function myFunction() {
 </script>
   <h1>Sign Up!</h1>
   <h2>Step 1: Create A Account</h2>
-  <input type="search" id="myInput" onsearch="myFunction()" value="Username Here">
+  <input type="search" id="myInput" onsearch="myFunction()">
 
 
- <p id="demo"></p>
+<p id="demo"></p>
 
- <script>
- function myFunction() {
-    var x = document.getElementById("myInput");
-    document.getElementById("demo").innerHTML = "Your Username Is Now " + x.value;
- }
- function myFunction() {
-
- }
- </script>
+<script>
+function myFunction() {
+   var x = document.getElementById("myInput");
+   document.getElementById("demo").innerHTML = "Your Username Is: " + x.value;
+}
+</script>
  <h2>Step 2: Tell Us What Type Of Coding You'll Use</h2>
  <p>What Type Of Coding Will You Use On This Website?</p>
 <select id="myselect" onchange="myFunction()">
@@ -44,7 +41,7 @@ function myFunction() {
 <p>you agree to our terms. <button type="button" name="click" id="#clickFunction">Accept</button>
 
 <script>
-function #clickFunction() {
+function clickFunction(alert) {
   alert(Thank You For Accepting Our Terms)
 }
 </script>
